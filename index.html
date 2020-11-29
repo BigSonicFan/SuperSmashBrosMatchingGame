@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--link for styles.css file-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="text-align:center;">
+    <!--code that displays home page-->
+    <div id="homePage">
+        <div class="match">
+            <h3>Match the Picture Game</h3>
+            <h5>Welcome to the Match the Picture Game! Click the Start Button to get started!</h5>
+        </div>
+        <br>
+        <br>
+        <img src="mario/mario.jpg" alt="" height="250px" width="250px">
+        <img src="link/link.jpg" alt="" height="250px" width="250px">
+        <img src="kirby/kirby.jpg" alt="" height="250px" width="250px">
+        <img src="pikachu/pikachu.jpg" alt="" height="250px" width="250px">
+        <br>
+        <br>
+        <button class="btn btn-primary" id="MarioNext">Start Game</button>
+    </div>
+    <!--code that displays match picture 1-->
+    <div id="questionDisplay1" style="display:none;">
+        <h3 class="match">Match Picture #1</h3>
+        <img src="mario/mario.jpg" alt="Picture to Match" height="250px" width="250px">
+        <br>
+        <br>
+        <div> 
+            <img src="mario/mario3.jpg" alt="Picture 1" height="200px" width="200px" id="Question1WrongAnswer1">
+            <img src="mario/mario.jpg" alt="Picture 2" height="200px" width="200px" id="Question1RightAnswer">
+            <img src="mario/mario2.jpg" alt="Picture 3" height="200px" width="200px" id="Question1WrongAnswer2">
+            <img src="mario/mario4.jpg" alt="Picture 4" height="200px" width="200px" id="Question1WrongAnswer3">
+        </div>
+        <br>   
+    </div>
+    <!--code that displays match picture 2-->
+    <div id="questionDisplay2" style="display:none;">
+        <h3 class="match">Match Picture #2</h3>
+        <img src="link/link.jpg" alt="Picture to Match" height="250px" width="250px">
+        <br>
+        <br>
+    <div> 
+        <img src="link/link2.jpg" alt="Picture 1" height="200px" width="200px" id="Question2WrongAnswer1">
+        <img src="link/link3.jpg" alt="Picture 2" height="200px" width="200px" id="Question2WrongAnswer2">
+        <img src="link/link.jpg" alt="Picture 3" height="200px" width="200px" id="Question2RightAnswer">
+        <img src="link/link4.jpg" alt="Picture 4" height="200px" width="200px" id="Question2WrongAnswer3">
+    </div>
+    <br>
+    </div>
+    <!--code that displays match picture 3-->
+    <div id="questionDisplay3" style="display:none;">
+        <h3 class="match">Match Picture #3</h3>
+        <img src="kirby/kirby.jpg" alt="Picture to Match" height="250px" width="250px">
+        <br>
+        <br>
+        <div> 
+            <img src="kirby/kirby.jpg" alt="Picture 1" height="200px" width="200px" id="Question3RightAnswer">
+            <img src="kirby/kirby2.jpg" alt="Picture 2" height="200px" width="200px" id="Question3WrongAnswer1">
+            <img src="kirby/kirby3.jpg" alt="Picture 3" height="200px" width="200px" id="Question3WrongAnswer2">
+            <img src="kirby/kirby4.jpg" alt="Picture 4" height="200px" width="200px" id="Question3WrongAnswer3">
+        </div>
+        <br>
+    </div>
+    <!--code that displays match picture 4-->
+    <div id="questionDisplay4" style="display:none;">
+        <h3 class="match">Match Picture #4</h3>
+        <img src="pikachu/pikachu.jpg" alt="Picture to Match" height="250px" width="250px">
+        <br>
+        <br>
+        <div> 
+            <img src="pikachu/pikachu2.jpg" alt="Picture 1" height="200px" width="200px" id="Question4WrongAnswer1">
+            <img src="pikachu/pikachu4.jpg" alt="Picture 2" height="200px" width="200px" id="Question4WrongAnswer3">
+            <img src="pikachu/pikachu3.jpg" alt="Picture 3" height="200px" width="200px" id="Question4WrongAnswer2">
+            <img src="pikachu/pikachu.jpg" alt="Picture 4" height="200px" width="200px" id="Question4RightAnswer">
+        </div>
+        <br>
+    </div>
+    <!--code that displays final page-->
+    <div id="finalPage" style="display:none;">
+        <div class="match">
+            <h3>Congratulations!</h3>
+            <h5>You matched all of the pictures! Click the Play Again Button to play again!</h5>
+        </div>
+        <br>
+        <img src="mario/mario.jpg" alt="" height="250px" width="250px">
+        <img src="link/link.jpg" alt="" height="250px" width="250px">
+        <img src="kirby/kirby.jpg" alt="" height="250px" width="250px">
+        <img src="pikachu/pikachu.jpg" alt="" height="250px" width="250px">
+        <br>
+        <br>
+        <button class="btn btn-warning" id="playAgain">Play Again</button>
+    </div>
+    <div style="display:inline">
+        <div id="display1" style="display:none;">
+            <button class="btn btn-success" id="LinkNext">Next</button>
+        </div>
+        <div id="display2" style="display:none;">
+            <button class="btn btn-success" id="KirbyNext">Next</button>
+        </div>
+        <div id="display3" style="display:none;">
+            <button class="btn btn-success" id="PikachuNext">Next</button>
+        </div>
+        <div id="display4" style="display:none;">
+            <button class="btn btn-success" id="FinalDisplay">Next</button>
+        </div>
+        <button id="goBack" class="btn btn-danger" style="display:none;">Go Back</button>
+    </div>
+    <br>
+    <!--script src that connects index.html file with scripts.js file-->
+    <script src="scripts.js"></script>
+    </body>
+</html>
